@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Интернет-магазин</title>
+    <link rel="stylesheet" href="css.css">
+    <link rel="JavaScript" href="js.js">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">MagnetShop</div>
+                <nav>
+                    <ul class="nav-menu">
+                        <li><a href="#">Главная</a></li>
+                        <li><a href="#">Каталог</a></li>
+                        <li><a href="#">О нас</a></li>
+                        <li><a href="#">Контакты</a></li>
+                    </ul>
+                </nav>
+                <div class="header-icons">
+                    <button class="icon-btn">🔍</button>
+                    <button class="icon-btn">❤️</button>
+                    <button class="icon-btn cart-btn">🛒<span class="cart-count">0</span></button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <h1>Добро пожаловать в наш магазин</h1>
+                <p>Мы предлагаем широкий ассортимент товаров по доступным ценам</p>
+                <button class="btn">Подробнее</button>
+            </div>
+        </section>
+
+        <section class="categories-section">
+            <div class="container">
+                <h2 class="section-title">Категории товаров</h2>
+                <div class="categories">
+                    <div class="category-card">
+                        <div class="category-img">📱</div>
+                        <div class="category-info">
+                            <h3>Электроника</h3>
+                            <p>Современные гаджеты и устройства</p>
+                        </div>
+                    </div>
+                    <div class="category-card">
+                        <div class="category-img">👕</div>
+                        <div class="category-info">
+                            <h3>Одежда</h3>
+                            <p>Модная одежда для всех</p>
+                        </div>
+                    </div>
+                    <div class="category-card">
+                        <div class="category-img">🏠</div>
+                        <div class="category-info">
+                            <h3>Для дома</h3>
+                            <p>Товары для вашего уюта</p>
+                        </div>
+                    </div>
+                    <div class="category-card">
+                        <div class="category-img">🎮</div>
+                        <div class="category-info">
+                            <h3>Развлечения</h3>
+                            <p>Игры и хобби</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="products-section">
+            <div class="container">
+                <h2 class="section-title">Хиты продаж</h2>
+                <div class="products-scroll" id="products-container">
+                </div>
+            </div>
+        </section>
+
+        <section class="advantages-section">
+            <div class="container">
+                <h2 class="section-title">Наши преимущества</h2>
+                <div class="advantages">
+                    <div class="advantage">
+                        <div class="advantage-icon">🚚</div>
+                        <h3>Быстрая доставка</h3>
+                        <p>Доставляем заказы по всей стране за 1-2 дня</p>
+                    </div>
+                    <div class="advantage">
+                        <div class="advantage-icon">💯</div>
+                        <h3>Гарантия качества</h3>
+                        <p>Все товары проходят тщательную проверку</p>
+                    </div>
+                    <div class="advantage">
+                        <div class="advantage-icon">🔒</div>
+                        <h3>Безопасная оплата</h3>
+                        <p>Различные способы оплаты с защитой данных</p>
+                    </div>
+                    <div class="advantage">
+                        <div class="advantage-icon">🔄</div>
+                        <h3>Легкий возврат</h3>
+                        <p>Возврат товара в течение 30 дней</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="faq-section">
+            <div class="container">
+                <h2 class="section-title">Часто задаваемые вопросы</h2>
+                <div class="accordion">
+                    <div class="accordion-item">
+                        <button class="accordion-btn">Как оформить заказ?<span>+</span></button>
+                        <div class="accordion-content">
+                            <p>Для оформления заказа добавьте товары в корзину, перейдите в корзину и нажмите "Оформить заказ". Затем заполните данные для доставки и выберите способ оплаты.</p>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <button class="accordion-btn">Как отследить заказ?<span>+</span></button>
+                        <div class="accordion-content">
+                            <p>После отправки заказа мы вышлем вам номер для отслеживания. Вы можете использовать его на сайте транспортной компании для получения информации о местоположении вашей посылки.</p>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <button class="accordion-btn">Какие способы оплаты вы принимаете?<span>+</span></button>
+                        <div class="accordion-content">
+                            <p>Мы принимаем банковские карты Visa, MasterCard, МИР, а также электронные кошельки и наличные при получении заказа.</p>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <button class="accordion-btn">Как вернуть товар?<span>+</span></button>
+                        <div class="accordion-content">
+                            <p>Вы можете вернуть товар в течение 30 дней с момента покупки. Для этого свяжитесь с нашей службой поддержки, и мы поможем вам организовать возврат.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact-section">
+            <div class="container">
+                <h2 class="section-title">Не нашли то, что искали?</h2>
+                <form class="contact-form" id="contact-form">
+                    <input type="text" placeholder="Ваше имя" required id="name-input">
+                    <input type="tel" placeholder="Ваш телефон" required id="tel-input">
+                    <button type="submit" class="btn">Отправить</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>ShopOnline</h3>
+                    <p>Лучший онлайн-магазин с широким ассортиментом товаров</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Контакты</h4>
+                    <p>📞 +7 (999) 999-99-99</p>
+                    <p>✉️ info@shoponline.ru</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Мы в соцсетях</h4>
+                    <div class="social-icons">
+                        <a href="#">📘</a>
+                        <a href="#">📸</a>
+                        <a href="#">🐦</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="cart-overlay" id="cart-overlay"></div>
+    <div class="cart-sidebar" id="cart-sidebar">
+        <div class="cart-header">
+            <h2>Корзина</h2>
+            <button class="close-cart" id="close-cart">×</button>
+        </div>
+        <div class="cart-items" id="cart-items">
+        </div>
+        <div class="cart-empty" id="cart-empty">Корзина пуста</div>
+        <div class="cart-footer">
+            <button class="checkout-btn" id="checkout-btn">Оформить заказ</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
